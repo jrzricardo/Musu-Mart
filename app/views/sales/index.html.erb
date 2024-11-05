@@ -1,0 +1,17 @@
+<h1>All Sales</h1>
+     <table>
+       <thead>
+         <tr>
+           <th>Timestamp</th>
+           <th>Quantity Sold</th>
+         </tr>
+       </thead>
+       <tbody>
+         <% @sales.each do |sale| %>
+           <tr>
+             <td><%= sale.timestamp %></td>
+             <td><%= sale.quantity_sold %></td>
+           </tr>
+         <% end %>
+       </tbody>
+     </table>

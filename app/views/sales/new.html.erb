@@ -1,0 +1,8 @@
+<h1>Log New Sale</h1>
+     <%= form_with(model: @sale, local: true) do |form| %>
+       <%= form.label :timestamp %>
+       <%= form.datetime_field :timestamp %>
+       <%= form.label :quantity_sold %>
+       <%= form.number_field :quantity_sold %>
+       <%= form.submit 'Record Sale' %>
+     <% end %>
